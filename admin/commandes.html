@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commandes — Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <h2>Yumi<span>Fit</span></h2>
+      <nav>
+        <a href="dashboard.html">📊 <span>Dashboard</span></a>
+        <a href="commandes.html" class="active">📦 <span>Commandes</span></a>
+        <a href="produits.html">🛍️ <span>Produits</span></a>
+        <a href="clients.html">👥 <span>Clients</span></a>
+        <a href="#" class="logout" onclick="logout()">🚪 <span>Déconnexion</span></a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="topbar">
+        <h1>Commandes</h1>
+        <div class="admin-user">👤 Admin</div>
+      </div>
+
+      <div class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>N°</th><th>Client</th><th>Téléphone</th>
+              <th>Total</th><th>Statut</th><th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="orders-list"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal détail commande -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal" id="modal-content"></div>
+  </div>
+
+  <script src="js/admin.js"></script>
+  <script>
+    requireAuth();
+    renderOrders();
+  </script>
+</body>
+</html>

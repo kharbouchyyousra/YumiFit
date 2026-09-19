@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander — YumiFit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">`n  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="container">
+    <h2 class="section-title">Passer la commande</h2>
+
+    <div id="order-summary" class="summary"></div>
+
+    <form class="form-card" id="order-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom *</label>
+          <input type="text" id="prenom" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telephone">Téléphone *</label>
+          <input type="tel" id="telephone" required placeholder="06 XX XX XX XX">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="adresse">Adresse *</label>
+        <input type="text" id="adresse" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ville">Ville *</label>
+        <input type="text" id="ville" required>
+      </div>
+
+      <div class="payment-box">
+        <label>
+          <input type="radio" name="payment" checked>
+          💵 Paiement à la livraison
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-block" id="submit-btn">Confirmer la commande</button>
+      <p id="form-error" style="color:#e63946;margin-top:12px;text-align:center;display:none"></p>
+    </form>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <form class="login-box" id="login-form">
+      <h1>ADMIN LOGIN</h1>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" value="admin@one.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" value="admin123" required>
+      </div>
+      <button type="submit" class="btn-login">Se connecter</button>
+      <div class="error-msg" id="error-msg"></div>
+    </form>
+  </div>
+
+  <script>
+  const API_URL = 'http://localhost:5000/api';
+
+  document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    const error = document.getElementById('error-msg');
+
+    try {
+      const res = await fetch(`${API_URL}/auth/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        error.textContent = data.error || 'Erreur';
+        return;
+      }
+
+      localStorage.setItem('admin_token', data.token);
+      window.location.href = 'dashboard.html';
+    } catch (err) {
+      error.textContent = 'Serveur indisponible';
+    }
+  });
+
+  if (localStorage.getItem('admin_token')) {
+    window.location.href = 'dashboard.html';
+  }
+</script>
+</body>
+</html>
