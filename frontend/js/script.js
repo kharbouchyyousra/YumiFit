@@ -2,12 +2,12 @@
    PRODUITS — chargés depuis l'API
    ============================================================ */
 const FALLBACK_PRODUCTS = [
-  { _id: '1', id: 1, name: "T-shirt Classic", price: 150, image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500", desc: "T-shirt 100% coton." },
-  { _id: '2', id: 2, name: "Hoodie Premium", price: 250, image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500", desc: "Hoodie molletonné." },
-  { _id: '3', id: 3, name: "Casquette Urban", price: 90, image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500", desc: "Casquette ajustable." },
-  { _id: '4', id: 4, name: "Sneakers Sport", price: 450, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500", desc: "Sneakers légères." },
-  { _id: '5', id: 5, name: "Sac à dos", price: 320, image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500", desc: "Sac à dos spacieux." },
-  { _id: '6', id: 6, name: "Montre Minimal", price: 550, image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500", desc: "Montre élégante." }
+  { _id: '1', id: 1, name: "Energy Cookies", price: 45, image: "images/products/produit1.jpeg", desc: "Cookies énergétiques sans sucre raffiné." },
+  { _id: '2', id: 2, name: "Dark Chocolate Sea Salt Nut Bars", price: 60, image: "images/products/produit2.jpeg", desc: "Barres chocolat noir & sel de mer, riches en noix." },
+  { _id: '3', id: 3, name: "Cookies avoine & miel", price: 30, image: "images/products/produit3.jpeg", desc: "Cookies croustillants à l'avoine et au miel bio." },
+  { _id: '4', id: 4, name: "Chocolate Coconut Energy Balls", price: 35, image: "images/products/produit3.jpeg", desc: "Boules énergétiques chocolat & coco, sans gluten." },
+  { _id: '5', id: 5, name: "Barres énergétiques", price: 25, image: "images/products/produit5.jpeg", desc: "Barres maison aux dattes, amandes et graines." },
+  { _id: '6', id: 6, name: "Nutty Energy Balls", price: 50, image: "images/products/produit6.jpeg", desc: "Boules croquantes aux noix et fruits secs." }
 ];
 
 let PRODUCTS = [];

@@ -12,12 +12,12 @@ console.log('📧 EMAIL :', process.env.ADMIN_EMAIL);
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
 const products = [
-  { name: "T-shirt Classic",  price: 150, image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500", description: "T-shirt 100% coton." },
-  { name: "Hoodie Premium",   price: 250, image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500", description: "Hoodie molletonné." },
-  { name: "Casquette Urban",  price: 90,  image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500", description: "Casquette ajustable." },
-  { name: "Sneakers Sport",   price: 450, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500", description: "Sneakers légères." },
-  { name: "Sac à dos",        price: 320, image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500", description: "Sac spacieux." },
-  { name: "Montre Minimal",   price: 550, image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500", description: "Montre élégante." }
+  { name: "Energy Cookies",  price: 45, image: "images/products/produit1.jpeg", description: "Cookies énergétiques sans sucre raffiné.." },
+  { name: "Dark Chocolate Sea Salt Nut Bars",   price: 60, image: "images/products/produit2.jpeg", description: "Barres chocolat noir & sel de mer, riches en noix." },
+  { name: "Cookies avoine & miel",  price: 30,  image: "images/products/produit3.jpeg", description: "Cookies croustillants à l'avoine et au miel bio." },
+  { name: "Chocolate Coconut Energy Balls",   price: 35, image: "images/products/produit4.jpeg", description: "Boules énergétiques chocolat & coco, sans gluten." },
+  { name: "Barres énergétiques", price: 25, image: "images/products/produit5.jpeg", description: "Barres maison aux dattes, amandes et graines." },
+  { name: "Nutty Energy Balls",   price: 50, image: "images/products/produit6.jpeg", description: "Boules croquantes aux noix et fruits secs." }
 ];
 
 async function run() {
