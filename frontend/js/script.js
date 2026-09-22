@@ -5,7 +5,7 @@ const FALLBACK_PRODUCTS = [
   { _id: '1', id: 1, name: "Energy Cookies", price: 45, image: "images/products/produit1.jpeg", desc: "Cookies énergétiques sans sucre raffiné." },
   { _id: '2', id: 2, name: "Dark Chocolate Sea Salt Nut Bars", price: 60, image: "images/products/produit2.jpeg", desc: "Barres chocolat noir & sel de mer, riches en noix." },
   { _id: '3', id: 3, name: "Cookies avoine & miel", price: 30, image: "images/products/produit3.jpeg", desc: "Cookies croustillants à l'avoine et au miel bio." },
-  { _id: '4', id: 4, name: "Chocolate Coconut Energy Balls", price: 35, image: "images/products/produit3.jpeg", desc: "Boules énergétiques chocolat & coco, sans gluten." },
+  { _id: '4', id: 4, name: "Chocolate Coconut Energy Balls", price: 35, image: "images/products/produit4.jpeg", desc: "Boules énergétiques chocolat & coco, sans gluten." },
   { _id: '5', id: 5, name: "Barres énergétiques", price: 25, image: "images/products/produit5.jpeg", desc: "Barres maison aux dattes, amandes et graines." },
   { _id: '6', id: 6, name: "Nutty Energy Balls", price: 50, image: "images/products/produit6.jpeg", desc: "Boules croquantes aux noix et fruits secs." }
 ];
